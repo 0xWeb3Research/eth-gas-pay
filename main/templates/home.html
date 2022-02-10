@@ -1,116 +1,121 @@
 {% load static %}
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
+      type="image/x-icon"
+    />
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <!--=============== CSS ===============--> 
-        <link rel="stylesheet" href='{% static "/css/index.css" %}' />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href='{% static "/css/index.css" %}' />
 
-        <title>Responsive Halloween Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png" alt="" class="nav__logo-img">
-                    Gas-pay
-                </a>
+    <title>Responsive Halloween Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
+            alt=""
+            class="nav__logo-img"
+          />
+          Gas-pay
+        </a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="/" class="nav__link active-link">Home</a>
-                        </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/" class="nav__link active-link">Refresh</a>
+            </li>
 
-                        <a href="#" class="button button--ghost">Donate</a>
-                    </ul>
+            <a href="#" class="button button--ghost">Donate</a>
+          </ul>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
 
-                    </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
+    <main class="main">
+      <!--==================== TRICK OR TREAT ====================-->
+      <section class="section trick" id="trick">
+        <h4 class="section__title">Get All layer fees ♥ </h4>
 
-            </nav>
-        </header>
+        <div class="trick__container container grid">
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 1 -Layer 1</h3>
+            <span class="trick__subtitle">slow: </span>
+            <span class="trick__price">${{slow}}</span>
+          </div>
 
-        <main class="main">
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 1 -Layer 1</h3>
+            <span class="trick__subtitle">Normal: </span>
+            <span class="trick__price">${{normal}}</span>
+          </div>
 
-            <!--==================== TRICK OR TREAT ====================-->
-            <section class="section trick" id="trick">
-                <h2 class="section__title">Get All layer fees ♥</h2>
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 1 -Layer 1</h3>
+            <span class="trick__subtitle">Fast: </span>
+            <span class="trick__price">${{fast}}</span>
+          </div>
 
-                <div class="trick__container container grid">
-                    
-                    <div class="trick__content">
-                        <h3 class="trick__title">Layer 1 -Layer 1</h3>
-                        <span class="trick__subtitle">slow:  </span>
-                        <span class="trick__price">${{slow}}</span>
-                    </div>
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 1 -Layer 1</h3>
+            <span class="trick__subtitle">Instant</span>
+            <span class="trick__price">${{instant}}</span>
+          </div>
 
-                    <div class="trick__content">
-                        <h3 class="trick__title">Layer 1 -Layer 1</h3>
-                        <span class="trick__subtitle">Normal: </span>
-                        <span class="trick__price">${{normal}}</span>
-                    </div>
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 2 -Layer 2</h3>
+            <span class="trick__subtitle">ETH</span>
+            <span class="trick__price">${{l2l2p}}</span>
+          </div>
 
-                    <div class="trick__content">
-                        <h3 class="trick__title">Layer 1 -Layer 1</h3>
-                        <span class="trick__subtitle">Fast: </span>
-                        <span class="trick__price">${{fast}}</span>
-                    </div>
+          <div class="trick__content">
+            <h3 class="trick__title">Layer 1 -Layer 2</h3>
+            <span class="trick__subtitle">ETH</span>
+            <span class="trick__price">${{l1l2p}}</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                    <div class="trick__content">
-                        <h3 class="trick__title">Layer 1 -Layer 1</h3>
-                        <span class="trick__subtitle">Instant</span>
-                        <span class="trick__price">${{instant}}</span>
-                    </div>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
 
-                    <div class="trick__content">
-                      <h3 class="trick__title">Layer 2 -Layer 2</h3>
-                      <span class="trick__subtitle">ETH</span>
-                      <span class="trick__price">${{l2l2p}}</span>
-                  </div>
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-                  <div class="trick__content">
-                      <h3 class="trick__title">Layer 1 -Layer 2</h3>
-                      <span class="trick__subtitle">ETH</span>
-                      <span class="trick__price">${{l1l2p}}</span>
-                  </div>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-                </div>
-              </section>
-        </main>
-
-
-            <!--=============== SCROLL UP ===============-->
-            <a href="#" class="scrollup" id="scroll-up">
-                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-            </a>
-        
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== MAIN JS ===============-->
-  <script src="{% static '/js/index.js' %}" type="text/javascript"></script>
-    </body>
+    <!--=============== MAIN JS ===============-->
+    <script src="{% static '/js/index.js' %}" type="text/javascript"></script>
+  </body>
 </html>
