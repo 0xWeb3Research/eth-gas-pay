@@ -7,5 +7,3 @@ idna==3.3
 requests==2.27.1
 sqlparse==0.4.2
 urllib3==1.26.8
-waitress==2.0.0
-whitenoise==5.3.0
