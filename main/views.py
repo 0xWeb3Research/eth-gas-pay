@@ -15,7 +15,7 @@ def Layer2toLayer2():
     payload_l2_l2_T = {
     "txType": "Transfer",
     "address": "0xf33A2D61DD09541A8C9897D7236aDcCCC14Cf769",
-    "tokenLike": "ETH",
+    "tokenLike": "USDT",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
@@ -24,7 +24,7 @@ def Layer2toLayer2():
             {
             "type": "string",
             "enum": [
-                "Withdraw"
+                "Transfer"
             ]
             },
             {
@@ -201,3 +201,5 @@ def home(request):
     return render(request, 'home.html', {"l2l2p": l2tl2_total, "l1l2p": l1tl2_total, "slow": slow, "fast": fast, "instant": instant, "normal": normal})
 
 
+def test(request):
+    return render(request, 'home.html')
