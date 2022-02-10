@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT creg.wsgi:application
+web: gunicorn gaspay.wsgi
