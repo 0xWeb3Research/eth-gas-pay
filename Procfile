@@ -1,1 +1,1 @@
-web: gunicorn gaspay.wsgi
+web: gunicorn gaspay.wsgi --log-file -
