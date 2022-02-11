@@ -195,7 +195,7 @@ def home(request):
     l2tl2 = Layer2toLayer2()
     l1tl2 = Layer1toLayer2()
     l2tl2_total = addValues(l2tl2, Ethfees)
-    l1tl2_total = addValues(l1tl2, Ethfees) * 10
+    l1tl2_total = addValues(l1tl2, Ethfees)
     slow, normal, fast, instant = getEthFees()
        
     return render(request, 'home.html', {"l2l2p": l2tl2_total, "l1l2p": l1tl2_total, "slow": slow, "fast": fast, "instant": instant, "normal": normal})
